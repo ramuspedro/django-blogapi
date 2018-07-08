@@ -20,9 +20,9 @@ class BlogTests(TestCase):
 
     def test_blog_content(self):
         post = Post.objects.get(id=1)
-        expected_author = f'{post.author}'
-        expected_title = f'{post.title}'
-        expected_body = f'{post.body}'
+        expected_author = '%s'%post.author
+        expected_title = '%s'%post.title
+        expected_body = '%s'%post.body
         self.assertEquals(expected_author, 'testuser1')
         self.assertEquals(expected_title, 'Blog title')
         self.assertEquals(expected_body, 'Body content...')
