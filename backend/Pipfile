@@ -8,6 +8,7 @@ django = "==2.0"
 djangorestframework = "==3.8.2"
 django-rest-auth = "==0.9.3"
 django-allauth = "==0.36.0"
+coreapi = "==2.2.3"
 
 [requires]
 python_version = "3.5"
